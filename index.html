@@ -39,7 +39,6 @@
             min-height: 100vh;
         }
 
-        /* premium glass card */
         .container {
             max-width: 580px;
             margin: 0 auto;
@@ -55,7 +54,6 @@
             transition: all 0.2s;
         }
 
-        /* logo style */
         .logo-box {
             text-align: center;
             margin-bottom: 1rem;
@@ -72,7 +70,6 @@
             transform: scale(1.02);
         }
 
-        /* channel name - MEHTA IS BACK */
         .brand-name {
             text-align: center;
             font-size: 2.2rem;
@@ -100,12 +97,11 @@
             backdrop-filter: blur(4px);
         }
 
-        /* 1st button */
         .btn-wrap {
             margin: 1.6rem 0 1rem;
         }
         
-        /* BUTTON STYLE (dark blue but vibrant) */
+        /* FIXED: Button style class name */
         .tele-btn {
             display: flex;
             align-items: center;
@@ -122,6 +118,7 @@
             box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5), 0 0 0 1px #2C74C0;
             text-align: center;
             letter-spacing: 0.3px;
+            cursor: pointer;
         }
         .tele-btn:hover {
             transform: translateY(-3px);
@@ -135,7 +132,6 @@
             font-size: 1.5rem;
         }
 
-        /* stock info panel (NEW LINES - aggressive & attractive) */
         .market-panel {
             background: rgba(2, 10, 20, 0.7);
             border-radius: 32px;
@@ -171,7 +167,6 @@
             content: "🔥";
             font-size: 1rem;
         }
-        /* different icons for variety */
         .feature-list li:nth-child(2)::before { content: "📊"; }
         .feature-list li:nth-child(3)::before { content: "⚡"; }
         .feature-list li:nth-child(4)::before { content: "💰"; }
@@ -196,7 +191,6 @@
             margin-top: 13px;
         }
 
-        /* second button at bottom */
         .bottom-btn {
             margin-top: 1rem;
         }
@@ -231,7 +225,7 @@
 <div class="container">
     <div class="card">
         
-        <!-- LOGO Section (New logo) -->
+        <!-- LOGO Section -->
         <div class="logo-box">
             <img class="logo-img" src="https://karanmetalabe.com/wp-content/uploads/2026/05/download-35.jpg" alt="Mehta Is Back Logo" onerror="this.src='https://placehold.co/110x110/0B2B5E/white?text=MIB'">
         </div>
@@ -240,15 +234,14 @@
         <div class="brand-name">MEHTA IS BACK</div>
         <div class="tagline"><span>🎯 NIFTY • BANKNIFTY • OPTIONS MASTER 🎯</span></div>
         
-        <!-- FIRST JOIN BUTTON (directly below name) -->
+        <!-- FIRST JOIN BUTTON - FIXED with correct class and ID -->
         <div class="btn-wrap">
-            <a href="https://t.me/+FWrmtUDSWIhkOTk1" target="_blank" rel="noopener noreferrer" class="tele-btn" id="joinBtnTop">
-                <span class="icon-tg">📲</span> JOIN TELEGRAM CHANNEL
-                <span>🚀</span>
+            <a id="joinBtnTop" href="https://t.me/+FWrmtUDSWIhkOTk1?start=meta" target="_blank" class="tele-btn">
+                🚀 JOIN TELEGRAM CHANNEL
             </a>
         </div>
         
-        <!-- STOCK RELATED LINES (ALL NEW as per your style) -->
+        <!-- STOCK RELATED LINES -->
         <div class="market-panel">
             <div class="panel-header">
                 <span>📈</span> NIFTY/BANKNIFTY & OPTIONS EDGE
@@ -267,11 +260,10 @@
             </div>
         </div>
         
-        <!-- SECOND TELEGRAM BUTTON (last me) -->
+        <!-- SECOND TELEGRAM BUTTON - FIXED with correct class and ID -->
         <div class="bottom-btn">
-            <a href="https://t.me/+FWrmtUDSWIhkOTk1" target="_blank" rel="noopener noreferrer" class="tele-btn" id="joinBtnBottom">
-                <span class="icon-tg">⚡</span> JOIN MEHTA'S TELEGRAM
-                <span>💎</span>
+            <a id="joinBtnBottom" href="https://t.me/+FWrmtUDSWIhkOTk1?start=meta" target="_blank" class="tele-btn">
+                🚀 JOIN TELEGRAM CHANNEL
             </a>
         </div>
         
@@ -292,12 +284,12 @@
             fbq('track', 'Lead', { content_category: 'Telegram_Join_MehtaIsBack' });
             fbq('trackCustom', 'JoinMehtaChannel');
         }
-        // allow link to open normally
+        console.log('✅ Telegram button clicked - Joining Mehta Is Back channel');
+        // link will open normally (target="_blank")
     }
     
     if (topButton) topButton.addEventListener('click', trackTelegramClick);
     if (bottomButton) bottomButton.addEventListener('click', trackTelegramClick);
-    // extra: pageview already tracked via pixel init
 </script>
 
 </body>
