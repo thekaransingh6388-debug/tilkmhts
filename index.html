@@ -6,24 +6,23 @@
     <title>Mehta Is Back • Stock Market Official</title>
     <meta name="description" content="Join Mehta Is Back for NIFTY, BANKNIFTY & Stock Options - Live analysis, 85% accuracy, daily premium calls">
     
-    <!-- Meta Pixel Code (MEHTA IS BACK - NEW ID) -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '985327084316519');
-    fbq('track', 'PageView');
-    </script>
-    <noscript>
-        <img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=985327084316519&ev=PageView&noscript=1"/>
-    </noscript>
-    <!-- End Meta Pixel Code -->
+    <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1312200967035796');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1312200967035796&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
     
     <style>
         * {
@@ -101,7 +100,7 @@
             margin: 1.6rem 0 1rem;
         }
         
-        /* FIXED: Button style class name */
+        /* Button style class name */
         .tele-btn {
             display: flex;
             align-items: center;
@@ -130,6 +129,16 @@
         }
         .icon-tg {
             font-size: 1.5rem;
+        }
+
+        /* NEW SUBSCRIBE BUTTON STYLE (additional subscription button) */
+        .subscribe-btn {
+            background: linear-gradient(95deg, #0D3A6E 0%, #1F5DA0 50%, #2B6DB8 100%);
+            border-bottom: 2px solid #ffb347;
+            margin-top: 8px;
+        }
+        .subscribe-btn:hover {
+            background: linear-gradient(95deg, #154a82, #2a6db8);
         }
 
         .market-panel {
@@ -194,6 +203,11 @@
         .bottom-btn {
             margin-top: 1rem;
         }
+        
+        /* Extra subscription section */
+        .subscribe-section {
+            margin-top: 1.2rem;
+        }
 
         .footer-credit {
             text-align: center;
@@ -202,6 +216,14 @@
             color: #5c7d9e;
             border-top: 1px solid #1F3A5F;
             padding-top: 1rem;
+        }
+        
+        .event-badge {
+            text-align: center;
+            font-size: 0.6rem;
+            color: #ffb347;
+            margin-top: 6px;
+            letter-spacing: 0.3px;
         }
         
         @media (max-width: 500px) {
@@ -230,18 +252,36 @@
             <img class="logo-img" src="https://karanmetalabe.com/wp-content/uploads/2026/05/download-35.jpg" alt="Mehta Is Back Logo" onerror="this.src='https://placehold.co/110x110/0B2B5E/white?text=MIB'">
         </div>
         
-        <!-- Channel Name: MEHTA IS BACK -->
+        <!-- Channel Name: MEHTA IS BACK (Name ke niche buttons rakhna hai) -->
         <div class="brand-name">MEHTA IS BACK</div>
         <div class="tagline"><span>🎯 NIFTY • BANKNIFTY • OPTIONS MASTER 🎯</span></div>
         
-        <!-- FIRST JOIN BUTTON - FIXED with correct class and ID -->
+        <!-- ========== FIRST JOIN BUTTON - directly below name (ke niche) ========= -->
         <div class="btn-wrap">
-            <a id="joinBtnTop" href="https://t.me/+FWrmtUDSWIhkOTk1?start=meta" target="_blank" class="tele-btn">
+            <a id="joinBtnTop" href="https://t.me/+FWrmtUDSWIhkOTk1?start=meta" target="_blank" class="tele-btn" data-button-name="Join Button Primary (Below Name)" data-position="first_under_name">
                 🚀 JOIN TELEGRAM CHANNEL
             </a>
         </div>
         
-        <!-- STOCK RELATED LINES -->
+        <!-- ========== SECOND JOIN BUTTON - second button below name (do button name ke niche) ========= -->
+        <div class="bottom-btn">
+            <a id="joinBtnBottom" href="https://t.me/+FWrmtUDSWIhkOTk1?start=meta" target="_blank" class="tele-btn" data-button-name="Join Button Secondary (Below Name 2)" data-position="second_under_name">
+                ⚡ GET FREE CALLS → JOIN NOW
+            </a>
+        </div>
+        
+        <!-- ========== EXTRA SUBSCRIBE BUTTON + EVENT TOOL PIXEL TRACKING ========= -->
+        <!-- As per requirement: subscribe button & join telegram channel & event tool pixel tracke karke -->
+        <div class="subscribe-section">
+            <a id="subscribeBtnSpecial" href="https://t.me/+FWrmtUDSWIhkOTk1?start=meta" target="_blank" class="tele-btn subscribe-btn" data-button-name="Subscribe Telegram Button (Special Event Track)" data-position="dedicated_subscribe_section">
+                🔔 📢 SUBSCRIBE TO TELEGRAM ALERTS
+            </a>
+            <div class="event-badge">
+                🎯 Pixel Tracked: Lead + Subscribe + CustomEvent (Event Tool Active)
+            </div>
+        </div>
+        
+        <!-- STOCK RELATED LINES (NIFTY/BANKNIFTY Points, Accuracy etc) -->
         <div class="market-panel">
             <div class="panel-header">
                 <span>📈</span> NIFTY/BANKNIFTY & OPTIONS EDGE
@@ -260,13 +300,6 @@
             </div>
         </div>
         
-        <!-- SECOND TELEGRAM BUTTON - FIXED with correct class and ID -->
-        <div class="bottom-btn">
-            <a id="joinBtnBottom" href="https://t.me/+FWrmtUDSWIhkOTk1?start=meta" target="_blank" class="tele-btn">
-                🚀 JOIN TELEGRAM CHANNEL
-            </a>
-        </div>
-        
         <div class="footer-credit">
             🔐 Instant Access • 7000+ Active Traders • Daily Free Setups <br>
             © MEHTA IS BACK — Your Trusted Market Navigator
@@ -275,22 +308,186 @@
 </div>
 
 <script>
-    // Facebook Pixel custom click tracking for both buttons
-    const topButton = document.getElementById('joinBtnTop');
-    const bottomButton = document.getElementById('joinBtnBottom');
-    
-    function trackTelegramClick(event) {
-        if (typeof fbq === 'function') {
-            fbq('track', 'Lead', { content_category: 'Telegram_Join_MehtaIsBack' });
-            fbq('trackCustom', 'JoinMehtaChannel');
+    // ========== COMPLETE EVENT TRACKING: Subscribe + Join Telegram + Event Tool Pixel ==========
+    (function() {
+        // Helper function to fire all pixel events (Lead, Subscribe, CustomEvent)
+        function fireAllPixelEvents(buttonElement, buttonName, position) {
+            if (typeof fbq !== 'function') {
+                console.warn("Facebook Pixel not ready. Tracking skipped but link works.");
+                return;
+            }
+            
+            // Standard Lead event (primary conversion for join)
+            fbq('track', 'Lead', {
+                content_name: buttonName,
+                content_category: 'Telegram_Channel_Join_MehtaIsBack',
+                button_position: position,
+                method: 'Telegram_Redirect',
+                currency: 'INR',
+                value: 0
+            });
+            
+            // Subscribe event (Meta standard event for subscriptions)
+            fbq('track', 'Subscribe', {
+                content_name: 'Telegram_Channel_Subscription_Mehta',
+                status: 'joined',
+                button_name: buttonName,
+                location: position,
+                channel: 'MEHTA_IS_BACK_TELEGRAM'
+            });
+            
+            // Custom event for deeper analytics (Event Tool Pixel Track)
+            fbq('track', 'CustomEvent', {
+                event_name: 'JoinMehtaTelegramChannel',
+                button_label: buttonName,
+                position_on_page: position,
+                page_section: 'cta_telegram',
+                timestamp: new Date().toISOString()
+            });
+            
+            // Additional Custom Event with specific name for better tracking
+            if (fbq && fbq('trackCustom')) {
+                fbq('trackCustom', 'MehtaTelegramJoin', {
+                    button_name: buttonName,
+                    location: position
+                });
+            }
+            
+            console.log(`[FB Pixel] Events fired: Lead, Subscribe, CustomEvent for "${buttonName}" at "${position}"`);
         }
-        console.log('✅ Telegram button clicked - Joining Mehta Is Back channel');
-        // link will open normally (target="_blank")
-    }
-    
-    if (topButton) topButton.addEventListener('click', trackTelegramClick);
-    if (bottomButton) bottomButton.addEventListener('click', trackTelegramClick);
+        
+        // Get all telegram join/subscribe buttons
+        const topButton = document.getElementById('joinBtnTop');
+        const bottomButton = document.getElementById('joinBtnBottom');
+        const subscribeButton = document.getElementById('subscribeBtnSpecial');
+        
+        // Function to attach tracking to a button
+        function setupButtonTracking(button, defaultName, defaultPosition) {
+            if (!button) return;
+            
+            // Get custom attributes or use defaults
+            let buttonName = button.getAttribute('data-button-name') || defaultName;
+            let position = button.getAttribute('data-position') || defaultPosition;
+            
+            // Remove existing click listeners and add new one with tracking
+            const newButton = button.cloneNode(true);
+            if (button.parentNode) {
+                button.parentNode.replaceChild(newButton, button);
+            }
+            
+            newButton.addEventListener('click', function(e) {
+                // Fire all pixel events before redirect
+                fireAllPixelEvents(newButton, buttonName, position);
+                console.log(`[Click Track] Redirecting to Telegram via ${buttonName}`);
+                return true;
+            });
+            
+            // Preserve href
+            if (newButton.getAttribute('href') !== (button.getAttribute('href') || 'https://t.me/+FWrmtUDSWIhkOTk1?start=meta')) {
+                newButton.setAttribute('href', 'https://t.me/+FWrmtUDSWIhkOTk1?start=meta');
+            }
+        }
+        
+        // Setup all three buttons
+        setupButtonTracking(topButton, 'Join Button Primary (Below Name)', 'first_under_name_direct');
+        setupButtonTracking(bottomButton, 'Join Button Secondary (Below Name 2)', 'second_under_name_direct');
+        setupButtonTracking(subscribeButton, 'Subscribe Telegram Button (Special Event Track)', 'dedicated_subscribe_section');
+        
+        // ========== SCROLL DEPTH TRACKING (Event Tool) ==========
+        let scrollTracked25 = false;
+        let scrollTracked50 = false;
+        let scrollTracked75 = false;
+        
+        window.addEventListener('scroll', function() {
+            const scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+            
+            if (!scrollTracked25 && scrollPercent >= 25) {
+                if (typeof fbq === 'function') {
+                    fbq('track', 'ScrollDepth', { depth: '25%', page: 'mehta_is_back_landing' });
+                    fbq('trackCustom', 'EngagementScroll', { percent: 25, channel: 'MehtaIsBack' });
+                    console.log('[Event Tool] Scroll depth 25% tracked');
+                }
+                scrollTracked25 = true;
+            }
+            
+            if (!scrollTracked50 && scrollPercent >= 50) {
+                if (typeof fbq === 'function') {
+                    fbq('track', 'ScrollDepth', { depth: '50%', page: 'mehta_is_back_landing' });
+                    fbq('trackCustom', 'EngagementScroll', { percent: 50, channel: 'MehtaIsBack' });
+                    console.log('[Event Tool] Scroll depth 50% tracked');
+                }
+                scrollTracked50 = true;
+            }
+            
+            if (!scrollTracked75 && scrollPercent >= 75) {
+                if (typeof fbq === 'function') {
+                    fbq('track', 'ScrollDepth', { depth: '75%', page: 'mehta_is_back_landing' });
+                    fbq('trackCustom', 'EngagementScroll', { percent: 75, channel: 'MehtaIsBack' });
+                    console.log('[Event Tool] Scroll depth 75% tracked');
+                }
+                scrollTracked75 = true;
+            }
+        });
+        
+        // ========== PAGE VIEW ENHANCED TRACKING ==========
+        if (typeof fbq === 'function') {
+            fbq('track', 'ViewContent', {
+                content_name: 'Mehta_Is_Back_Telegram_Landing',
+                content_category: 'StockMarket_Channel_Mehta',
+                currency: 'INR',
+                value: 0
+            });
+            fbq('trackCustom', 'LandingPageViewed_Mehta', {
+                designer: 'MehtaIsBack',
+                version: '2.0_EventTool_Final'
+            });
+            console.log('[Pixel] PageView, ViewContent, and Custom landing event tracked');
+        }
+        
+        // ========== DELEGATION SAFETY: Track any telegram link click that might have been missed ==========
+        document.body.addEventListener('click', function(e) {
+            const target = e.target.closest('a');
+            if (target && target.href && target.href.includes('t.me/+FWrmtUDSWIhkOTk1')) {
+                // Check if tracking already attached
+                if (!target.hasAttribute('data-tracked-telegram')) {
+                    let btnName = target.innerText.trim().substring(0, 50) || 'Telegram_Link_Dynamic_Mehta';
+                    let pos = 'dynamic_click_delegation';
+                    if (typeof fbq === 'function') {
+                        fbq('track', 'Lead', { content_name: btnName, content_category: 'dynamic_telegram_mehta', button_position: pos });
+                        fbq('track', 'Subscribe', { content_name: 'Telegram_Channel_Join_Dynamic_Mehta' });
+                        fbq('trackCustom', 'MehtaTelegramJoin', { button_name: btnName, location: pos });
+                        console.log('[Delegation] Pixel tracked for dynamic telegram click');
+                    }
+                    target.setAttribute('data-tracked-telegram', 'true');
+                }
+            }
+        });
+        
+        // ========== TIME ON PAGE TRACKING (Event Tool) ==========
+        let startTime = Date.now();
+        window.addEventListener('beforeunload', function() {
+            const timeSpent = Math.floor((Date.now() - startTime) / 1000);
+            if (timeSpent > 5 && typeof fbq === 'function') {
+                fbq('trackCustom', 'TimeOnPage', {
+                    seconds_spent: timeSpent,
+                    page: 'mehta_is_back_landing'
+                });
+                console.log(`[Event Tool] Time on page tracked: ${timeSpent} seconds`);
+            }
+        });
+        
+        console.log('✅ Mehta Is Back: All Join Telegram & Subscribe buttons are pixel-tracked with Lead, Subscribe & Custom events (Event Tool ready).');
+        console.log('✅ Buttons placed: (1) First under name, (2) Second under name, (3) Extra Subscribe button with event tracking');
+    })();
 </script>
 
+<!-- Summary of changes as per requirement:
+     bhai same changes karke final code dedo → 
+     1. Subscribe button added (extra dedicated subscription button with event tracking)
+     2. Join Telegram channel buttons (two buttons under "MEHTA IS BACK" name ke niche)
+     3. Event tool pixel tracking: Lead + Subscribe + CustomEvent + ScrollDepth + TimeOnPage + ViewContent
+     4. Stock market benefits: NIFTY/BANKNIFTY points, 85-92% accuracy, daily premium setups
+     5. All buttons properly fire Meta Pixel events before redirect
+-->
 </body>
 </html>
